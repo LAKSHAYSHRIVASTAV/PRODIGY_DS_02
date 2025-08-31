@@ -1,1 +1,55 @@
-# Data Cleaning and EDA - Adult Census Income Dataset  This repository contains code and resources for data cleaning and Exploratory Data Analysis of the Adult Census Income dataset. The dataset provides demographic information about individuals and their income levels.  ## Dataset  The Adult Census Income dataset is available [here](https://www.kaggle.com/datasets/uciml/adult-census-income). It includes various attributes such as age, education, workclass, marital status, and more. The target variable is the income level, indicating whether an individual earns more than $50,000 per year.  ## Repository Contents  - `data/`: This directory contains the Adult Census Income dataset files. - `prodigy-infotech-data-science-task-2.ipynb`: Jupyter Notebook file containing code and analysis. - `README.md`:## Instructions 1.Open the `prodigy-infotech-data-science-task-2.ipynb` file using Jupyter Notebook or any compatible environment.  2. Execute the code cells in the notebook to load the dataset, preprocess and clean the data, and perform Exploratory Data Analysis.  3. Review the generated histograms and analyze them to make observations and conclusions.  ## Results  In this notebook, our objective was to understand the Adult Census Income dataset available on Kaggle. We accomplished this by performing data cleaning, preparation, and exploratory data analysis (EDA) specifically focused on categorical data using histograms. Through our analysis and the creation of histograms, we were able to gain better insights into the income distribution across different categories. Our EDA process provided us with valuable information about the dataset itself, further enhancing our understanding of its characteristics and patterns.  ## Contributing  If you wish to contribute to this project, you can follow these steps:  1. Fork the repository. 2. Create a new branch for your feature or bug fix. 3. Make the necessary changes and commit your code. 4. Push your branch to your forked repository. 5. Submit a pull request, describing your changes in detail.  ## Author  This project is authored by Aryan Juyal.  ## Organization  This project is developed by Prodigy Infotech.  Feel free to use the code and resources in this repository, keeping the license terms in mind.
+PRODIGY_INFOTECH_DATASCIENCE_TASK_2
+Objective:
+The aim of this task is to perform data cleaning and exploratory data analysis (EDA) on a real-world dataset. We chose the Titanic dataset from Kaggle to analyze survival patterns and understand relationships between variables such as age, gender, class, and embarkation point.
+
+This helps in developing skills in preprocessing, visual storytelling, and extracting actionable insights from structured data.
+
+Dataset Used:
+Source: Kaggle
+Dataset: Titanic - Machine Learning from Disaster
+Format: CSV (train.csv)
+Link: https://www.kaggle.com/c/titanic/data
+Note: The file train.csv must be downloaded manually and placed in the working directoy
+Technologies Used:
+Python 3.11+
+Pandas for data analysis
+NumPy for numerical operations
+Seaborn and Matplotlib for plotting
+Jupyter Notebook or compatible Python IDE
+Working:
+Data Loading:
+The dataset is loaded using pandas.read_csv.
+Initial data exploration is done using .head(), .info(), and .describe().
+Data Cleaning:
+Missing values in Age and Embarked are filled using median and mode respectively.
+The Cabin column is dropped due to a high percentage of missing values.
+Unnecessary columns like Name, Ticket, and PassengerId are removed for clarity.
+Exploratory Data Analysis (EDA):
+Univariate Analysis:
+Count plots for Survived, Pclass, and Sex
+Histogram of Age with KDE (Kernel Density Estimate)
+Bivariate Analysis:
+Survival rate by Gender (Sex)
+Survival rate by Passenger Class (Pclass)
+Heatmap showing correlation between numerical features
+Visualizations:
+Survival by Gender:
+Bar chart comparing male vs female survival rates
+X-axis: Gender | Y-axis: Count of passengers
+Survival by Class:
+Stacked bar chart of survival across Pclass (1, 2, 3)
+Annotations added for clarity
+Age Distribution:
+Histogram showing distribution of passenger ages
+KDE overlay highlights density
+Uses seaborn.histplot with 30 bins
+Correlation Heatmap:
+Heatmap of correlation matrix between numerical columns
+Shows strongest survival indicators like Sex and Pclass
+Learning Outcomes:
+Learned how to clean and preprocess a real-world dataset
+Identified missing data and used appropriate imputation strategies
+Gained hands-on experience with exploratory data analysis
+Visualized patterns in survival based on multiple factors
+Practiced creating professional-level plots and annotated visuals
+Understood how class, gender, and age affected survival on the Titanic
